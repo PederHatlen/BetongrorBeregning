@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Alfreds Betong AS | Betongrør utregning</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header><h1>Betongrør Beregning</h1></header>
+	<main>
+		<form id="form">
+			<h2>Verdier</h2>
+			<table>
+				<tr><td><label for="ytreDiameter">Betongrøret sin ytre diameter i cm</label></td><td><input type="number" name="ytreDiameter" id="ytreDiameter" placeholder="cm"></td></tr>
+				<tr><td><label for="indreDiameter">Betongrøret sin indre diameter i cm</label></td><td><input type="number" name="indreDiameter" id="indreDiameter" placeholder="cm"></td></tr>
+				<tr><td><label for="indreDiameter">Betongrøret sin lengde i cm</label></td><td><input type="number" name="lengde" id="lengde" placeholder="cm"></td></tr>
+			</table>
+			<input type="submit" value="Regn ut">
+		</form>
+		<div id="results">
+			<h2>Kalkulasjoner</h2>
+			<p>Dette røret vil ha et volum på <span id="pipeInnerVolume"></span>liter, og vil ha <span id="pipeThickness"></span>cm tykke betongvegger.</p>
+			<p>Det vil bruke <span id="concreteM3"></span>m<sup>3</sup> med betong eller <span id="concreteL"></span>liter.</p>
+			<p>Når vi bruker Alfreds Betong AS B25 Betong&trade; vil det koste <span id="priceTotal"></span>kr for <span id="sackCount"></span> som veier <span id="weightSack"></span>.</p>
+		</div>
+		<span id="info"></span>
+	</main>
+	<footer></footer>
+	<script src="js/script.js"></script>
+</body>
+</html>
